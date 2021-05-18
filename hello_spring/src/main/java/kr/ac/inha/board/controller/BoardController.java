@@ -17,9 +17,8 @@ public class BoardController {
 	public String name(String id) {
 		return "당신의 학번은 "+id+"입니다.";
 	}
-//	@RequestMapping("/num")
-//	public String num(String n) {
-//		for(int i=1;i<10;i++)
-//			return n+"*"+i+"="+String
-//	}
+	@RequestMapping("/num")
+	public String num(String n) {
+		return n+"*"+1+"="+Integer.parseInt(n)*1;
+	}
 }
